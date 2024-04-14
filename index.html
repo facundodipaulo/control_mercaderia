@@ -3,18 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Buscador</title>
+  <title>Registro de Mercaderia</title>
   <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
 </head>
 <body>
+  <div class="container">
     <div class="titulo">
-        <h1>Registro de Mercaderia</h1>
-        <h3>Buscar segun Nombre, PLU y Codigo de 6</h3>
-    </div>  
-  <input type="text" id="searchInput" placeholder="Buscar...">
-  <button id="showAllButton">Mostrar Todo</button>
-  <button id="clearAllButton">Borrar Todo</button>
-  
+      <h1>Registro de Mercaderia</h1>
+      <h3>Buscar segun Nombre, PLU y Codigo de 6</h3>
+    </div> 
+    <div class="controls">
+      <button id="clearSearchButton"><i class="fas fa-trash-alt"></i></button>  
+      <input type="text" id="searchInput" placeholder="Buscar...">
+      <button id="showAllButton">Mostrar Todo</button>
+      <button id="clearAllButton">Borrar Todo</button>
+    </div>
+  </div>
+
   <table id="resultados">
     <thead>
       <tr>
@@ -29,6 +35,3 @@
   <script src="index.js"></script>
 </body>
 </html>
-
-
-
